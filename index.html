@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+<html lang="es">
+<head>
+  <!-- Configuración de codificación y visualización en dispositivos móviles -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Licenciatura en Informática Educativa</title> 
+
+  <!-- Enlace a la hoja de estilos CSS externa -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fuente personalizada desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Encabezado principal del sitio -->
+  <header>
+    <h1>Licenciatura en Informática Educativa</h1> 
+  </header>
+
+  <!-- Imagen de banner principal -->
+  <div class="banner">
+    <img src="imagenes/banner.png" alt="Banner Facultad de Ciencias Naturales y Matemática" />
+  </div>
+
+  <!-- Barra de navegación del sitio -->
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Carrera</a>
+    <a href="#">Facultad</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <!-- Contenedor general que agrupa el contenido principal -->
+  <div class="container">
+    
+    <!-- Barra lateral con información institucional -->
+    <aside>
+      <h2>Sobre la UES</h2>
+      <p>La Universidad de El Salvador es la institución pública de educación superior más importante del país.</p>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+      
+      <!-- Sección con descripción de la carrera -->
+      <section class="descripcion-carrera">
+        <h2>Facultad de Ciencias Naturales y Matemática</h2>
+        <p>
+          La Licenciatura en Informática Educativa forma profesionales capaces de integrar la tecnología con los procesos educativos,
+          promoviendo el aprendizaje significativo a través de herramientas digitales.
+        </p>
+
+        <!-- Imagen del logo institucional -->
+        <img src="imagenes/logo.jpg" alt="Logo de la UES" class="logo" />
+
+        <!-- Enlace externo al sitio oficial -->
+        <p class="enlace">
+          Visita el sitio oficial de la <a href="https://www.ues.edu.sv" target="_blank">Universidad de El Salvador</a>.
+        </p>
+
+        <!-- Video informativo -->
+        <video controls>
+          <source src="media/video/mi_video.mp4" type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </section>
+
+      <!-- Sección con tarjetas de beneficios de la carrera -->
+      <section class="tarjetas">
+        <h2>Ventajas de la Carrera</h2>
+        <div class="card-container">
+          <div class="card">Tecnología educativa</div>
+          <div class="card">Docencia innovadora</div>
+          <div class="card">Inserción laboral</div>
+        </div>
+      </section>
+
+      <!-- Formulario de contacto para los visitantes -->
+      <section class="formulario-contacto">
+        <h3>Formulario de Contacto</h3>
+        <form id="formulario">
+          <!-- Campo para el nombre del usuario -->
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" />
+
+          <!-- Campo para correo electrónico -->
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="correo@gmail.com" />
+
+          <!-- Opciones de género con botones tipo radio -->
+          <label>Género:</label>
+          <div class="genero-container">
+            <label class="genero-opcion">
+              <input type="radio" name="genero" value="Masculino" />
+              Masculino
+            </label>
+            <label class="genero-opcion">
+              <input type="radio" name="genero" value="Femenino" />
+              Femenino
+            </label>
+          </div>
+
+          <!-- Opción para recibir más información -->
+          <label class="genero-opcion">
+            <input type="checkbox" id="info" name="info" />
+            Deseo recibir más información sobre la carrera
+          </label>
+
+          <!-- Área de texto para el mensaje del visitante -->
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+          <!-- Botón para enviar el formulario -->
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <!-- Pie de página del sitio -->
+  <footer>
+    <p>&copy; 2025 - Universidad de El Salvador - FCNM</p>
+  </footer>
+</body>
+</html>
